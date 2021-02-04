@@ -21,12 +21,8 @@ public class SimpleShoot : MonoBehaviour
     [Tooltip("Bullet Speed")] [SerializeField] private float shotPower = 500f;
     [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 150f;
 
-    private ActionBasedController controller;
-
     void Start()
     {
-        controller = GetComponent<ActionBasedController>();
-
         if (barrelLocation == null)
             barrelLocation = transform;
 
@@ -34,16 +30,11 @@ public class SimpleShoot : MonoBehaviour
             gunAnimator = GetComponentInChildren<Animator>();
     }
 
-    void Update()
+    public void pullTrigger()
     {
-        //If you want a different input, change it here
-        if (controller.selectAction.action.ReadValue<bool>())
-        {
-            //Calls animation on the gun that has the relevant animation events that will fire
-            gunAnimator.SetTrigger("Fire");
-        }
+        //Calls animation on the gun that has the relevant animation events that will fire
+        gunAnimator.SetTrigger("Fire");
     }
-
 
     //This function creates the bullet behavior
     void Shoot()
