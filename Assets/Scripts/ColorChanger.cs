@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class ColorChanger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void SetColorRed()
     {
-        
+        GetComponent<MeshRenderer>().material.color = Color.red;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetColorBlue()
     {
-        
+        GetComponent<MeshRenderer>().material.color = Color.blue;
     }
 }
