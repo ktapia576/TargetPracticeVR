@@ -57,8 +57,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615230642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0761, z: 0.0832}
-  m_LocalScale: {x: 0.02200835, y: 0.069906615, z: 0.22209913}
+  m_LocalPosition: {x: -0, y: 0.094, z: 0.0832}
+  m_LocalScale: {x: 0.02200835, y: 0.046804573, z: 0.22209913}
   m_Children: []
   m_Father: {fileID: 612077607}
   m_RootOrder: 0
@@ -120,6 +120,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1700326795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3061793777607413125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6804990658058999119, guid: 65c9f6563c561ee4e8905d1e6a32548b,
+    type: 3}
+  casingPrefab: {fileID: 4362657251999731927, guid: 4cb20e8abae957146a8b78e670d3fe74,
+    type: 3}
+  muzzleFlashPrefab: {fileID: 1782395880954752, guid: 3dd9cf2e209c504448f1c4c6835675cf,
+    type: 3}
+  gunAnimator: {fileID: 5234588583396013556}
+  barrelLocation: {fileID: 5785793134447203820}
+  casingExitLocation: {fileID: 5785572999176988440}
+  destroyTimer: 2
+  shotPower: 700
+  ejectPower: 250
 --- !u!54 &98524508
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -250,30 +274,6 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
---- !u!114 &1700326795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3061793777607413125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 6804990658058999119, guid: 65c9f6563c561ee4e8905d1e6a32548b,
-    type: 3}
-  casingPrefab: {fileID: 4362657251999731927, guid: 4cb20e8abae957146a8b78e670d3fe74,
-    type: 3}
-  muzzleFlashPrefab: {fileID: 1782395880954752, guid: 3dd9cf2e209c504448f1c4c6835675cf,
-    type: 3}
-  gunAnimator: {fileID: 5234588583396013556}
-  barrelLocation: {fileID: 5785793134447203820}
-  casingExitLocation: {fileID: 5785572999176988440}
-  destroyTimer: 2
-  shotPower: 700
-  ejectPower: 250
 --- !u!1001 &7651507769786160053
 PrefabInstance:
   m_ObjectHideFlags: 0

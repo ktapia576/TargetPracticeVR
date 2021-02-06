@@ -16,8 +16,9 @@ public class WeaponScript : MonoBehaviour
 
     private void OnEnable()
     {
-        // Add event listner once interactable is picked up (enabled) and activated
+        // Add event listner once interactable enabled and activated (When player picks up and "activates")
         interactable.activated.AddListener(Fire);
+        Debug.Log("Enabled: " + interactable.enabled + " OnEnable()"); // debug whether enabled or not
     }
 
     private void OnDisable()
@@ -29,6 +30,5 @@ public class WeaponScript : MonoBehaviour
     private void Fire(BaseInteractionEventArgs arg)
     {
         Debug.Log("Fire");
-        Debug.Log("Enabled: "+interactable.enabled); // debug whether enabled or not
     } 
 }
