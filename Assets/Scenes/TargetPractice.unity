@@ -1441,6 +1441,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2632740538048565971, guid: c60b87e3723e3e142b5e3a123f9bfe6e,
         type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632740538048565971, guid: c60b87e3723e3e142b5e3a123f9bfe6e,
+        type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
