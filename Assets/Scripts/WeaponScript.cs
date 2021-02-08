@@ -6,6 +6,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class WeaponScript : MonoBehaviour
 {
+    public Transform barrel = null;
+    public GameObject projectilePrefab = null;
+
     private XRGrabInteractable interactable = null;
 
     // Use Awake for getting components and cache preformance heavy methods
@@ -29,6 +32,14 @@ public class WeaponScript : MonoBehaviour
 
     private void Fire(BaseInteractionEventArgs arg)
     {
-        Debug.Log("Fire");
-    } 
+        CreateProjectile();
+    }
+
+    private void CreateProjectile()
+    {
+        GameObject projectileObject = Instantiate(projectilePrefab, barrel.position, barrel.rotation);
+        Projectile projectile = projectileObject.GetComponent<Projectile>();    // Get the reference to projectile component script from gameObject
+
+        projectile.Launch();
+    }
 }
