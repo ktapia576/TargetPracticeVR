@@ -73,6 +73,8 @@ GameObject:
   - component: {fileID: 5102225753209929506}
   - component: {fileID: 8824384909913778653}
   - component: {fileID: 2632740538048565971}
+  - component: {fileID: 832819103112154215}
+  - component: {fileID: 832819103112154221}
   m_Layer: 0
   m_Name: Deagle
   m_TagString: Untagged
@@ -87,7 +89,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6759414007540670199}
-  m_LocalRotation: {x: -0.70710725, y: -0, z: -0, w: 0.7071064}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.017340083, z: 0.017340204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -262,3 +264,31 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
+--- !u!65 &832819103112154215
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759414007540670199}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24471742, y: 0.0308772, z: 0.11615553}
+  m_Center: {x: -0.08855796, y: 0.0000000045741366, z: 0.017340127}
+--- !u!114 &832819103112154221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759414007540670199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8a251a4ac26ff54cb2c3511c4c66c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrel: {fileID: 193758293825474695}
+  projectilePrefab: {fileID: 3450400996862332871, guid: cd26e2df056475f48b82b08589648dbe,
+    type: 3}
