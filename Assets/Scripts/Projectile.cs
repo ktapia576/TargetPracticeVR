@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float launchForce = 10.0f;
+    private Rigidbody rigidBody = null;
+
+    private void Awake()
     {
-        
+        rigidBody = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Launch()
     {
-        
+        rigidBody.AddRelativeForce(Vector3.forward * launchForce, ForceMode.Impulse);
+        Destroy(gameObject, 5.0f); // Destory the gameobject this component is attached to after 5 seconds
     }
 }
