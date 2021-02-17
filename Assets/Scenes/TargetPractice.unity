@@ -154,24 +154,6 @@ Transform:
   m_Father: {fileID: 716585315}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &128926750 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6085726202634203851, guid: fec2c75b4890f3746848c118a6f203dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 6392224621745204544}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &128926757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128926750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1897b7c29e65fe9448ce61ee49ec257d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &153134610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,10 +1390,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1499642453, guid: fec2c75b4890f3746848c118a6f203dd, type: 3}
-      propertyPath: m_MovementType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499642453, guid: fec2c75b4890f3746848c118a6f203dd, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 288168339}
@@ -1423,11 +1401,6 @@ PrefabInstance:
     - target: {fileID: 6392224622529134795, guid: fec2c75b4890f3746848c118a6f203dd,
         type: 3}
       propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392224622529134795, guid: fec2c75b4890f3746848c118a6f203dd,
-        type: 3}
-      propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6863212123627726961, guid: fec2c75b4890f3746848c118a6f203dd,
