@@ -10,7 +10,10 @@ public class SmoothVelocityTracking : MonoBehaviour
     private void Awake()
     {
         rigidBody = gameObject.GetComponent<Rigidbody>(); // Get rigidBody of game object
+    }
 
+    private void Start()
+    {
         rigidBody.maxAngularVelocity = 20f; // The default is 7 which is too low for fast movements (smoothes object when moving)
     }
 }
