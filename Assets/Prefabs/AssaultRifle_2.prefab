@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 5725249185408865054}
   - component: {fileID: 6392224622529134795}
   - component: {fileID: 6392224622529134793}
-  - component: {fileID: 6392224622529134794}
+  - component: {fileID: 1499642453}
   m_Layer: 0
   m_Name: AssaultRifle_2
   m_TagString: Untagged
@@ -58,7 +58,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6085726202634203851}
-  m_LocalRotation: {x: -0.70710707, y: -0, z: -0, w: 0.70710653}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -147,7 +147,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5876306, y: 0.029403146, z: 0.06757054}
   m_Center: {x: -0.27871174, y: -0.0000000102445465, z: 0.09518768}
---- !u!114 &6392224622529134794
+--- !u!114 &1499642453
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
